@@ -22,13 +22,4 @@ struct Track: Codable {
         // Take one of the artwork from the response as our artwork
         case albumArtworkUrl = "artworkUrl60"
     }
-    
-    init(from decoder: Decoder) throws {
-        let container: KeyedDecodingContainer<CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
-        trackId = try? container.decode(Int.self, forKey: .trackId)
-        name = try? container.decode(String.self, forKey: .name)
-        artistName = try? container.decode(String.self, forKey: .artistName)
-        albumName = try? container.decode(String.self, forKey: .albumName)
-        albumArtworkUrl = try? container.decode(String.self, forKey: .albumArtworkUrl)
-    }
 }

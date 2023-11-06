@@ -95,8 +95,7 @@ final class SearchListViewModel: SearchListViewModelProtocol, SearchListViewMode
     
     private func setupBinding() {
         onViewDidLoad.bind { [weak self] in
-            guard let self = self else { return }
-            self.fetchTrack()
+            self?.fetchTrack()
         }
         
         onSearchTextDidChange.bind { [weak self] searchText in

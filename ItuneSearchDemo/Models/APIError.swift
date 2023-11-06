@@ -18,8 +18,7 @@ extension APIError: Equatable {
         switch (lhs, rhs) {
         case (.invalidRequest, .invalidRequest): return true
         case (.invalidResponse, .invalidResponse): return true
-        case (.networkError(let lhsErrorMessage), .networkError(let rhsErrorMessage)):
-            return lhsErrorMessage == rhsErrorMessage
+        case (.networkError, .networkError): return true
         default:
             return false
         }

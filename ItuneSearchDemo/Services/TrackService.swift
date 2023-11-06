@@ -30,9 +30,14 @@ protocol TrackServiceProtocol {
 final class TrackService: TrackServiceProtocol {
     // MARK: - Dependencies
     private let session: NetworkServiceProtocol
+    private let config: ConfigProtocol
     
-    init(session: NetworkServiceProtocol = URLSession.shared) {
+    init(
+        session: NetworkServiceProtocol = URLSession.shared,
+        config: ConfigProtocol = Config()
+    ) {
         self.session = session
+        self.config = config
     }
     
     func fetchTrack(
@@ -44,9 +49,9 @@ final class TrackService: TrackServiceProtocol {
         completion: @escaping (Result<[Track], APIError>) -> Void
     ) {
         var components: URLComponents = URLComponents()
-        components.scheme = "https"
-        components.host = "itunes.apple.com"
-        components.path = "/search"
+        components.scheme = config.defaultScheme
+        components.host = config.baseUrl
+        components.path = config.searchPath
         
         components.queryItems = [
             URLQueryItem(name: "offset", value: "\(offset)"),
@@ -63,8 +68,6 @@ final class TrackService: TrackServiceProtocol {
             completion(.failure(.invalidRequest))
             return
         }
-        
-        print(url)
         
         session.dataTask(with: url) { data, response, error in
             if let error = error {
