@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  ItuneSearchDemo
+
+  Created by Patrick Tang on 6/11/2023.
+  
+*/
+
+"Search for track..." = "Search for track...";
+"Country Filter" = "Country Filter";
+"Media Filter" = "Media Filter";
+"Loading..." = "Loading...";
+"No Result yet..." = "No Result yet...";
+"Country" = "Country";
+"Media Type" = "Media Type";
+"Language" = "Language";
+"Search" = "Search";
+"Favourite" = "Favourite";
+"Add to Favourite" = "Add to Favourite";
+"Would you like to favourite this track?" = "Would you like to favourite this track?";
+"Add" = "Add";
+"Cancel" = "Cancel";
+"Remove from Favourite" = "Remove from Favourite";
+"Would you like to remove this track from favourite?" = "Would you like to remove this track from favourite?";
+"Remove" = "Remove";
+"No Favourite yet..." = "No Favourite yet...";

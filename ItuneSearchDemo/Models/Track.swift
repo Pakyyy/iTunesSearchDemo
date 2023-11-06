@@ -7,28 +7,28 @@
 
 import Foundation
 
-struct Track: Decodable {
-//    let trackId: Int
+struct Track: Codable {
+    let trackId: Int?
     let name: String?
     let artistName: String?
     let albumName: String?
-//    let albumArtworkUrl: String
+    let albumArtworkUrl: String?
     
     enum CodingKeys: String, CodingKey {
-//        case trackId = "trackId"
+        case trackId = "trackId"
         case name = "trackName"
         case artistName = "artistName"
         case albumName = "collectionName"
         // Take one of the artwork from the response as our artwork
-//        case albumArtworkUrl = "artworkUrl60"
+        case albumArtworkUrl = "artworkUrl60"
     }
     
     init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
-//        trackId = try container.decode(Int.self, forKey: .trackId)
+        trackId = try? container.decode(Int.self, forKey: .trackId)
         name = try? container.decode(String.self, forKey: .name)
         artistName = try? container.decode(String.self, forKey: .artistName)
         albumName = try? container.decode(String.self, forKey: .albumName)
-//        albumArtworkUrl = try container.decode(String.self, forKey: .albumArtworkUrl)
+        albumArtworkUrl = try? container.decode(String.self, forKey: .albumArtworkUrl)
     }
 }

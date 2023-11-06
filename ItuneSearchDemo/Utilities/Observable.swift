@@ -11,6 +11,8 @@ import Foundation
 class Observable<T> {
     typealias Listener = (T) -> ()
     
+    private var debounceTimer: Timer?
+    
     var listener: Listener?
     var value: T {
         didSet {
@@ -31,7 +33,16 @@ class Observable<T> {
         listener?(value)
     }
     
-    internal func fire() {
+    func fire() {
         self.listener?(value)
+    }
+    
+    // Simple debounce method
+    // There are plenty of way to debounce our call, here we pick the simplest one to keep thing simple
+    func debounce(with timeInterval: TimeInterval, _ value: T) {
+        debounceTimer?.invalidate()
+        debounceTimer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: false, block: { [weak self] _ in
+            self?.value = value
+        })
     }
 }

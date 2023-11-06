@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  ItuneSearchDemo
+
+  Created by Patrick Tang on 6/11/2023.
+  
+*/
+
+"Search for track..." = "搜索曲目...";
+"Country Filter" = "国家过滤器";
+"Media Filter" = "媒体过滤器";
+"Loading..." = "正在加载...";
+"No Result yet..." = "还没有结果...";
+"Country" = "国家";
+"Media Type" = "媒体类型";
+"Language" = "语言";
+"Search" = "搜索";
+"Favourite" = "收藏夹";
+"Add to Favourite" = "添加到收藏夹";
+"Would you like to favourite this track?" = "你想收藏这首曲目吗？";
+"Add" = "添加";
+"Cancel" = "取消";
+"Remove from Favourite" = "从收藏夹中删除";
+"Would you like to remove this track from favourite?" = "您想从收藏夹中删除这首曲目吗？";
+"Remove" = "删除";
+"No Favourite yet..." = "还没有收藏...";

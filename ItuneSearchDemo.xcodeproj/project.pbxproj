@@ -3,10 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		062D4D6A85709807952435D3 /* Pods_ItuneSearchDemo_ItuneSearchDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A273F99D69D53EF6998107 /* Pods_ItuneSearchDemo_ItuneSearchDemoUITests.framework */; };
+		6A199AF78A9DC0DA5FCCE36A /* Pods_ItuneSearchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FAF8BE0785D1CD3300C391 /* Pods_ItuneSearchDemo.framework */; };
+		AB79FE056E39DBDAC3518B55 /* Pods_ItuneSearchDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0C6D60FB3C205620B99C7 /* Pods_ItuneSearchDemoTests.framework */; };
+		CDA386062AF35DB500CC4A6A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA386052AF35DB500CC4A6A /* Country.swift */; };
+		CDA386082AF35DCA00CC4A6A /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA386072AF35DCA00CC4A6A /* MediaType.swift */; };
+		CDA3860A2AF4DBC200CC4A6A /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA386092AF4DBC200CC4A6A /* ItemListViewController.swift */; };
+		CDA3860C2AF61CB700CC4A6A /* FavouriteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA3860B2AF61CB700CC4A6A /* FavouriteListViewModel.swift */; };
+		CDA3860E2AF61D8C00CC4A6A /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA3860D2AF61D8C00CC4A6A /* StorageService.swift */; };
+		CDA386102AF8A4B900CC4A6A /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA3860F2AF8A4B900CC4A6A /* Language.swift */; };
+		CDA386132AF8A8D200CC4A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDA386152AF8A8D200CC4A6A /* Localizable.strings */; };
+		CDA386192AF8A9B000CC4A6A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA386182AF8A9B000CC4A6A /* String+Extensions.swift */; };
+		CDA3861B2AF8B20200CC4A6A /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA3861A2AF8B20200CC4A6A /* LanguageManager.swift */; };
 		CDE927302AE26BC3008D142D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9272F2AE26BC3008D142D /* AppDelegate.swift */; };
 		CDE927372AE26BC3008D142D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE927352AE26BC3008D142D /* Main.storyboard */; };
 		CDE9273A2AE26BC3008D142D /* ItuneSearchDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDE927382AE26BC3008D142D /* ItuneSearchDemo.xcdatamodeld */; };
@@ -50,6 +62,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53A273F99D69D53EF6998107 /* Pods_ItuneSearchDemo_ItuneSearchDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItuneSearchDemo_ItuneSearchDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		780E974C7F9347C09829A258 /* Pods-ItuneSearchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItuneSearchDemo.release.xcconfig"; path = "Target Support Files/Pods-ItuneSearchDemo/Pods-ItuneSearchDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7E7D9662F23B406134641347 /* Pods-ItuneSearchDemo-ItuneSearchDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItuneSearchDemo-ItuneSearchDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-ItuneSearchDemo-ItuneSearchDemoUITests/Pods-ItuneSearchDemo-ItuneSearchDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9099766EE6E79ACE223C35F6 /* Pods-ItuneSearchDemo-ItuneSearchDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItuneSearchDemo-ItuneSearchDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-ItuneSearchDemo-ItuneSearchDemoUITests/Pods-ItuneSearchDemo-ItuneSearchDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		98F247793A65CB8F8FC54D6F /* Pods-ItuneSearchDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItuneSearchDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-ItuneSearchDemoTests/Pods-ItuneSearchDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A82BE30328A1AB9F282B0D38 /* Pods-ItuneSearchDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItuneSearchDemoTests.release.xcconfig"; path = "Target Support Files/Pods-ItuneSearchDemoTests/Pods-ItuneSearchDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5C0C6D60FB3C205620B99C7 /* Pods_ItuneSearchDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItuneSearchDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FAF8BE0785D1CD3300C391 /* Pods_ItuneSearchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItuneSearchDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA386052AF35DB500CC4A6A /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		CDA386072AF35DCA00CC4A6A /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		CDA386092AF4DBC200CC4A6A /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		CDA3860B2AF61CB700CC4A6A /* FavouriteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListViewModel.swift; sourceTree = "<group>"; };
+		CDA3860D2AF61D8C00CC4A6A /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		CDA3860F2AF8A4B900CC4A6A /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		CDA386142AF8A8D200CC4A6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CDA386162AF8A90500CC4A6A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CDA386172AF8A90E00CC4A6A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CDA386182AF8A9B000CC4A6A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		CDA3861A2AF8B20200CC4A6A /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		CDE9272C2AE26BC3008D142D /* ItuneSearchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItuneSearchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE9272F2AE26BC3008D142D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE927362AE26BC3008D142D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +108,7 @@
 		CDE927852AE292DE008D142D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		CDE927872AE29757008D142D /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		CDE9278A2AE297EB008D142D /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		EBF82AB89545DC9FF866EBC5 /* Pods-ItuneSearchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItuneSearchDemo.debug.xcconfig"; path = "Target Support Files/Pods-ItuneSearchDemo/Pods-ItuneSearchDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A199AF78A9DC0DA5FCCE36A /* Pods_ItuneSearchDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB79FE056E39DBDAC3518B55 /* Pods_ItuneSearchDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +132,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062D4D6A85709807952435D3 /* Pods_ItuneSearchDemo_ItuneSearchDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38A1DFE5EAB69C2E87C092D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBF82AB89545DC9FF866EBC5 /* Pods-ItuneSearchDemo.debug.xcconfig */,
+				780E974C7F9347C09829A258 /* Pods-ItuneSearchDemo.release.xcconfig */,
+				7E7D9662F23B406134641347 /* Pods-ItuneSearchDemo-ItuneSearchDemoUITests.debug.xcconfig */,
+				9099766EE6E79ACE223C35F6 /* Pods-ItuneSearchDemo-ItuneSearchDemoUITests.release.xcconfig */,
+				98F247793A65CB8F8FC54D6F /* Pods-ItuneSearchDemoTests.debug.xcconfig */,
+				A82BE30328A1AB9F282B0D38 /* Pods-ItuneSearchDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6FB6FEF99F1FE8129BF2F60D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1FAF8BE0785D1CD3300C391 /* Pods_ItuneSearchDemo.framework */,
+				53A273F99D69D53EF6998107 /* Pods_ItuneSearchDemo_ItuneSearchDemoUITests.framework */,
+				B5C0C6D60FB3C205620B99C7 /* Pods_ItuneSearchDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CDE927232AE26BC3008D142D = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +169,8 @@
 				CDE927482AE26BC4008D142D /* ItuneSearchDemoTests */,
 				CDE927522AE26BC4008D142D /* ItuneSearchDemoUITests */,
 				CDE9272D2AE26BC3008D142D /* Products */,
+				38A1DFE5EAB69C2E87C092D8 /* Pods */,
+				6FB6FEF99F1FE8129BF2F60D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +224,9 @@
 			children = (
 				CDE9277B2AE28CED008D142D /* Track.swift */,
 				CDE927852AE292DE008D142D /* APIError.swift */,
+				CDA386052AF35DB500CC4A6A /* Country.swift */,
+				CDA386072AF35DCA00CC4A6A /* MediaType.swift */,
+				CDA3860F2AF8A4B900CC4A6A /* Language.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +236,8 @@
 			children = (
 				CDE927772AE28C42008D142D /* TrackService.swift */,
 				CDE927792AE28C4E008D142D /* TrackResponse.swift */,
+				CDA3860D2AF61D8C00CC4A6A /* StorageService.swift */,
+				CDA3861A2AF8B20200CC4A6A /* LanguageManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -188,6 +253,7 @@
 		CDE927652AE26BF1008D142D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CDA386152AF8A8D200CC4A6A /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -226,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE927712AE27E82008D142D /* FavouriteListViewController.swift */,
+				CDA3860B2AF61CB700CC4A6A /* FavouriteListViewModel.swift */,
 			);
 			path = FavouriteListModule;
 			sourceTree = "<group>";
@@ -245,6 +312,7 @@
 				CDE927812AE2908A008D142D /* URLSessionDataTask+Extensions.swift */,
 				CDE927832AE290C0008D142D /* UITableViewCell+Extensions.swift */,
 				CDE927872AE29757008D142D /* UITableView+Extensions.swift */,
+				CDA386182AF8A9B000CC4A6A /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE9278A2AE297EB008D142D /* TrackTableViewCell.swift */,
+				CDA386092AF4DBC200CC4A6A /* ItemListViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,9 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDE927592AE26BC4008D142D /* Build configuration list for PBXNativeTarget "ItuneSearchDemo" */;
 			buildPhases = (
+				891DEE2FDED2315FE8FA73A2 /* [CP] Check Pods Manifest.lock */,
 				CDE927282AE26BC3008D142D /* Sources */,
 				CDE927292AE26BC3008D142D /* Frameworks */,
 				CDE9272A2AE26BC3008D142D /* Resources */,
+				AA309729CC03FB3D307FE6A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +352,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDE9275C2AE26BC4008D142D /* Build configuration list for PBXNativeTarget "ItuneSearchDemoTests" */;
 			buildPhases = (
+				96619B62CC966003F19CFF4C /* [CP] Check Pods Manifest.lock */,
 				CDE927412AE26BC4008D142D /* Sources */,
 				CDE927422AE26BC4008D142D /* Frameworks */,
 				CDE927432AE26BC4008D142D /* Resources */,
@@ -299,9 +371,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDE9275F2AE26BC4008D142D /* Build configuration list for PBXNativeTarget "ItuneSearchDemoUITests" */;
 			buildPhases = (
+				0AC4BD9FACB166C01ECF8A3C /* [CP] Check Pods Manifest.lock */,
 				CDE9274B2AE26BC4008D142D /* Sources */,
 				CDE9274C2AE26BC4008D142D /* Frameworks */,
 				CDE9274D2AE26BC4008D142D /* Resources */,
+				BBDE9E6767EF129890BE5945 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,12 +411,14 @@
 				};
 			};
 			buildConfigurationList = CDE927272AE26BC3008D142D /* Build configuration list for PBXProject "ItuneSearchDemo" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
+				"zh-Hans",
 			);
 			mainGroup = CDE927232AE26BC3008D142D;
 			productRefGroup = CDE9272D2AE26BC3008D142D /* Products */;
@@ -362,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE9273F2AE26BC4008D142D /* LaunchScreen.storyboard in Resources */,
+				CDA386132AF8A8D200CC4A6A /* Localizable.strings in Resources */,
 				CDE9273C2AE26BC4008D142D /* Assets.xcassets in Resources */,
 				CDE927372AE26BC3008D142D /* Main.storyboard in Resources */,
 			);
@@ -383,27 +460,138 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AC4BD9FACB166C01ECF8A3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItuneSearchDemo-ItuneSearchDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		891DEE2FDED2315FE8FA73A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItuneSearchDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96619B62CC966003F19CFF4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItuneSearchDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA309729CC03FB3D307FE6A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItuneSearchDemo/Pods-ItuneSearchDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItuneSearchDemo/Pods-ItuneSearchDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ItuneSearchDemo/Pods-ItuneSearchDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBDE9E6767EF129890BE5945 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItuneSearchDemo-ItuneSearchDemoUITests/Pods-ItuneSearchDemo-ItuneSearchDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItuneSearchDemo-ItuneSearchDemoUITests/Pods-ItuneSearchDemo-ItuneSearchDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ItuneSearchDemo-ItuneSearchDemoUITests/Pods-ItuneSearchDemo-ItuneSearchDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDE927282AE26BC3008D142D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CDE927722AE27E82008D142D /* FavouriteListViewController.swift in Sources */,
+				CDA3860A2AF4DBC200CC4A6A /* ItemListViewController.swift in Sources */,
 				CDE9277C2AE28CED008D142D /* Track.swift in Sources */,
+				CDA3861B2AF8B20200CC4A6A /* LanguageManager.swift in Sources */,
 				CDE927692AE26EF7008D142D /* RootViewController.swift in Sources */,
+				CDA386192AF8A9B000CC4A6A /* String+Extensions.swift in Sources */,
 				CDE927882AE29757008D142D /* UITableView+Extensions.swift in Sources */,
 				CDE9273A2AE26BC3008D142D /* ItuneSearchDemo.xcdatamodeld in Sources */,
+				CDA3860C2AF61CB700CC4A6A /* FavouriteListViewModel.swift in Sources */,
 				CDE927842AE290C0008D142D /* UITableViewCell+Extensions.swift in Sources */,
 				CDE927782AE28C42008D142D /* TrackService.swift in Sources */,
+				CDA3860E2AF61D8C00CC4A6A /* StorageService.swift in Sources */,
 				CDE927762AE284EE008D142D /* SettingViewController.swift in Sources */,
 				CDE927742AE27F5B008D142D /* SearchListViewModel.swift in Sources */,
 				CDE927862AE292DE008D142D /* APIError.swift in Sources */,
+				CDA386062AF35DB500CC4A6A /* Country.swift in Sources */,
+				CDA386082AF35DCA00CC4A6A /* MediaType.swift in Sources */,
 				CDE927702AE27BF3008D142D /* SearchListViewController.swift in Sources */,
 				CDE927802AE2906D008D142D /* URLSession+Extensions.swift in Sources */,
 				CDE927822AE2908A008D142D /* URLSessionDataTask+Extensions.swift in Sources */,
 				CDE927302AE26BC3008D142D /* AppDelegate.swift in Sources */,
 				CDE9278B2AE297EB008D142D /* TrackTableViewCell.swift in Sources */,
 				CDE9277A2AE28C4E008D142D /* TrackResponse.swift in Sources */,
+				CDA386102AF8A4B900CC4A6A /* Language.swift in Sources */,
 				CDE9276B2AE26F4E008D142D /* Observable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +629,17 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CDA386152AF8A8D200CC4A6A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDA386142AF8A8D200CC4A6A /* en */,
+				CDA386162AF8A90500CC4A6A /* zh-Hant */,
+				CDA386172AF8A90E00CC4A6A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			path = ItuneSearchDemo/Models;
+			sourceTree = SOURCE_ROOT;
+		};
 		CDE927352AE26BC3008D142D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -464,6 +663,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -524,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -576,6 +777,7 @@
 		};
 		CDE9275A2AE26BC4008D142D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF82AB89545DC9FF866EBC5 /* Pods-ItuneSearchDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -605,6 +807,7 @@
 		};
 		CDE9275B2AE26BC4008D142D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780E974C7F9347C09829A258 /* Pods-ItuneSearchDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -634,6 +837,7 @@
 		};
 		CDE9275D2AE26BC4008D142D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F247793A65CB8F8FC54D6F /* Pods-ItuneSearchDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -654,6 +858,7 @@
 		};
 		CDE9275E2AE26BC4008D142D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82BE30328A1AB9F282B0D38 /* Pods-ItuneSearchDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -674,6 +879,7 @@
 		};
 		CDE927602AE26BC4008D142D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E7D9662F23B406134641347 /* Pods-ItuneSearchDemo-ItuneSearchDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -692,6 +898,7 @@
 		};
 		CDE927612AE26BC4008D142D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9099766EE6E79ACE223C35F6 /* Pods-ItuneSearchDemo-ItuneSearchDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

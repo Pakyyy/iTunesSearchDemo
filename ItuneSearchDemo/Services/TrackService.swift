@@ -17,7 +17,14 @@ protocol URLSessionDataTaskProtocol {
 }
 
 protocol TrackServiceProtocol {
-    func fetchTrack(completion: @escaping (Result<[Track], APIError>) -> Void)
+    func fetchTrack(
+        for term: String,
+        offset: Int,
+        limit: Int,
+        country: Country,
+        mediaType: MediaType,
+        completion: @escaping (Result<[Track], APIError>) -> Void
+    )
 }
 
 final class TrackService: TrackServiceProtocol {
@@ -28,17 +35,29 @@ final class TrackService: TrackServiceProtocol {
         self.session = session
     }
     
-    func fetchTrack(completion: @escaping (Result<[Track], APIError>) -> Void) {
+    func fetchTrack(
+        for term: String,
+        offset: Int,
+        limit: Int,
+        country: Country,
+        mediaType: MediaType,
+        completion: @escaping (Result<[Track], APIError>) -> Void
+    ) {
         var components: URLComponents = URLComponents()
         components.scheme = "https"
         components.host = "itunes.apple.com"
         components.path = "/search"
         
         components.queryItems = [
-            URLQueryItem(name: "term", value: "jack johnson"),
-            URLQueryItem(name: "offset", value: "5"),
-            URLQueryItem(name: "limit", value: "5")
+            URLQueryItem(name: "offset", value: "\(offset)"),
+            URLQueryItem(name: "limit", value: "\(limit)"),
+            URLQueryItem(name: "country", value: country.queryString),
+            URLQueryItem(name: "media", value: mediaType.queryString)
         ]
+        
+        if term.isEmpty == false {
+            components.queryItems?.append(URLQueryItem(name: "term", value: term))
+        }
         
         guard let url = components.url else {
             completion(.failure(.invalidRequest))
