@@ -20,6 +20,7 @@
 		CD4C0F702AF93964000F3872 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C0F6F2AF93964000F3872 /* Config.swift */; };
 		CD4C0F742AF93D19000F3872 /* FetchTrackSuccessPayload.json in Resources */ = {isa = PBXBuildFile; fileRef = CD4C0F732AF93C95000F3872 /* FetchTrackSuccessPayload.json */; };
 		CD4C0F762AF93DD5000F3872 /* FetchTrackInvalidPayload.json in Resources */ = {isa = PBXBuildFile; fileRef = CD4C0F752AF93DD5000F3872 /* FetchTrackInvalidPayload.json */; };
+		CD4C0F782AF942F6000F3872 /* ItuneSearchDemo.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = CD4C0F772AF942F6000F3872 /* ItuneSearchDemo.xctestplan */; };
 		CDA386062AF35DB500CC4A6A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA386052AF35DB500CC4A6A /* Country.swift */; };
 		CDA386082AF35DCA00CC4A6A /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA386072AF35DCA00CC4A6A /* MediaType.swift */; };
 		CDA3860A2AF4DBC200CC4A6A /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA386092AF4DBC200CC4A6A /* ItemListViewController.swift */; };
@@ -88,6 +89,7 @@
 		CD4C0F6F2AF93964000F3872 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		CD4C0F732AF93C95000F3872 /* FetchTrackSuccessPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchTrackSuccessPayload.json; sourceTree = "<group>"; };
 		CD4C0F752AF93DD5000F3872 /* FetchTrackInvalidPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchTrackInvalidPayload.json; sourceTree = "<group>"; };
+		CD4C0F772AF942F6000F3872 /* ItuneSearchDemo.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ItuneSearchDemo.xctestplan; sourceTree = "<group>"; };
 		CDA386052AF35DB500CC4A6A /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		CDA386072AF35DCA00CC4A6A /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		CDA386092AF4DBC200CC4A6A /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 		CDE927232AE26BC3008D142D = {
 			isa = PBXGroup;
 			children = (
+				CD4C0F772AF942F6000F3872 /* ItuneSearchDemo.xctestplan */,
 				CDE9272E2AE26BC3008D142D /* ItuneSearchDemo */,
 				CDE927482AE26BC4008D142D /* ItuneSearchDemoTests */,
 				CDE927522AE26BC4008D142D /* ItuneSearchDemoUITests */,
@@ -470,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE9273F2AE26BC4008D142D /* LaunchScreen.storyboard in Resources */,
+				CD4C0F782AF942F6000F3872 /* ItuneSearchDemo.xctestplan in Resources */,
 				CDA386132AF8A8D200CC4A6A /* Localizable.strings in Resources */,
 				CDE9273C2AE26BC4008D142D /* Assets.xcassets in Resources */,
 				CDE927372AE26BC3008D142D /* Main.storyboard in Resources */,

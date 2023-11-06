@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../ItuneSearchDemo.xctestplan"
+            reference = "container:ItuneSearchDemo.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>

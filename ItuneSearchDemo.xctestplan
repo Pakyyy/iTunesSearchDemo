@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "D4B5A0B7-FC29-45DA-8613-2D5EF47345C0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ItuneSearchDemo.xcodeproj",
+      "identifier" : "CDE9272B2AE26BC3008D142D",
+      "name" : "ItuneSearchDemo"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ItuneSearchDemo.xcodeproj",
+        "identifier" : "CDE927442AE26BC4008D142D",
+        "name" : "ItuneSearchDemoTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ItuneSearchDemo.xcodeproj",
+        "identifier" : "CDE9274E2AE26BC4008D142D",
+        "name" : "ItuneSearchDemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
