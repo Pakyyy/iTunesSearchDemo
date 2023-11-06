@@ -90,6 +90,7 @@
 		CD4C0F732AF93C95000F3872 /* FetchTrackSuccessPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchTrackSuccessPayload.json; sourceTree = "<group>"; };
 		CD4C0F752AF93DD5000F3872 /* FetchTrackInvalidPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchTrackInvalidPayload.json; sourceTree = "<group>"; };
 		CD4C0F772AF942F6000F3872 /* ItuneSearchDemo.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ItuneSearchDemo.xctestplan; sourceTree = "<group>"; };
+		CD4C0F792AF9464C000F3872 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CDA386052AF35DB500CC4A6A /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		CDA386072AF35DCA00CC4A6A /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		CDA386092AF4DBC200CC4A6A /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +204,7 @@
 		CDE927232AE26BC3008D142D = {
 			isa = PBXGroup;
 			children = (
+				CD4C0F792AF9464C000F3872 /* README.md */,
 				CD4C0F772AF942F6000F3872 /* ItuneSearchDemo.xctestplan */,
 				CDE9272E2AE26BC3008D142D /* ItuneSearchDemo */,
 				CDE927482AE26BC4008D142D /* ItuneSearchDemoTests */,
